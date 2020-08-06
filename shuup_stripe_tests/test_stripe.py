@@ -7,7 +7,7 @@
 # LICENSE file in the root directory of this source tree.
 import mock
 import pytest
-from django.core.urlresolvers import reverse
+from django.urls import reverse
 from shuup.front.basket import get_basket
 from shuup.testing.factories import get_default_shop, get_default_tax_class
 from shuup.testing.utils import apply_request_middleware

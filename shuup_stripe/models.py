@@ -34,7 +34,8 @@ class StripeCheckoutPaymentProcessor(PaymentProcessor):
 
 
 class StripeCustomer(models.Model):
-    contact = models.OneToOneField("shuup.Contact", verbose_name=_("contact"), related_name="stripe_customer")
+    contact = models.OneToOneField(
+        "shuup.Contact", verbose_name=_("contact"), related_name="stripe_customer", on_delete=models.CASCADE)
     customer_token = models.CharField(max_length=255, verbose_name=_("Stripe customer ID"))
 
     class Meta:

@@ -10,7 +10,7 @@ import os
 import mock
 import pytest
 import stripe
-from django.core.urlresolvers import reverse
+from django.urls import reverse
 from shuup.core.models import get_person_contact
 from shuup.front.basket import get_basket
 from shuup.testing import factories

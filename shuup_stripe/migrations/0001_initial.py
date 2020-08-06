@@ -14,7 +14,7 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='StripeCheckoutPaymentProcessor',
             fields=[
-                ('paymentprocessor_ptr', models.OneToOneField(parent_link=True, auto_created=True, primary_key=True, serialize=False, to='shuup.PaymentProcessor')),
+                ('paymentprocessor_ptr', models.OneToOneField(parent_link=True, auto_created=True, primary_key=True, serialize=False, to='shuup.PaymentProcessor', on_delete=models.CASCADE)),
                 ('secret_key', models.CharField(max_length=100, verbose_name='Secret Key')),
                 ('publishable_key', models.CharField(max_length=100, verbose_name='Publishable Key')),
             ],

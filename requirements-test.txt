@@ -1,9 +1,69 @@
-pytest==3.0.6
-mock==2.0.0
-pytest-cov==2.4.0
-pytest-django==3.1.2
-flake8==3.3.0
-isort==4.2.5
-beautifulsoup4==4.5.3
-pytest-sugar==0.9.2
 -e .
+attrs==19.3.0             # via pytest
+babel==2.5.3              # via shuup
+beautifulsoup4==4.5.3
+bleach==3.1.5             # via shuup
+certifi==2020.6.20        # via requests
+chardet==3.0.4            # via requests
+coverage==5.2.1           # via pytest-cov
+django==2.2.15            # via django-filer, django-filter, django-jinja, django-mptt, django-polymorphic, django-reversion, django-timezone-field, djangorestframework, easy-thumbnails, jsonfield, shuup
+django-bootstrap3==11.0.0  # via shuup
+django-countries==6.1.2   # via shuup
+django-enumfields==2.0.0  # via shuup
+django-environ==0.4.5     # via shuup-stripe
+django-filer==1.7.1       # via shuup
+django-filter==2.2.0      # via shuup
+django-jinja==2.5.0       # via shuup
+django-js-asset==1.2.2    # via django-mptt
+django-mptt==0.9.1        # via django-filer, shuup
+django-parler==2.0.1      # via shuup
+django-polymorphic==2.1.2  # via django-filer, shuup
+django-registration-redux==2.7  # via shuup
+django-reversion==3.0.5   # via shuup
+django-timezone-field==3.1  # via shuup
+djangorestframework==3.11  # via shuup
+easy-thumbnails==2.7      # via django-filer
+et-xmlfile==1.0.1         # via openpyxl
+factory-boy==2.7.0        # via shuup
+fake-factory==0.5.3       # via factory-boy, shuup
+flake8==3.8.3
+idna==2.10                # via requests
+importlib-metadata==1.7.0  # via flake8, keyring, pluggy, pytest
+iniconfig==1.0.1          # via pytest
+isort==4.3.21
+jdcal==1.4.1              # via openpyxl
+jinja2==2.8.1             # via django-jinja, shuup
+jsonfield==2.1.1          # via shuup
+keyring==21.3.0           # via shuup
+keyrings.alt==3.4.0       # via shuup
+lxml==4.5.2               # via shuup
+markdown==2.6.11          # via shuup
+markupsafe==1.1.1         # via jinja2
+mccabe==0.6.1             # via flake8
+mock==4.0.2
+more-itertools==8.4.0     # via pytest
+openpyxl==2.5.14          # via shuup
+packaging==20.4           # via bleach, pytest
+pillow==7.2.0             # via easy-thumbnails
+pluggy==0.13.1            # via pytest
+py==1.9.0                 # via pytest
+pycodestyle==2.6.0        # via flake8
+pyflakes==2.2.0           # via flake8
+pyparsing==2.4.7          # via packaging
+pytest==6.0.1
+pytest-cov==2.10.0
+pytest-django==3.9.0
+python-dateutil==2.8.1    # via shuup
+pytz==2020.1              # via babel, django, django-timezone-field
+requests==2.24.0          # via shuup, stripe
+shuup==2.0.1              # via shuup-stripe
+six==1.15.0               # via bleach, django-filer, django-parler, jsonfield, packaging, python-dateutil, shuup
+sqlparse==0.3.1           # via django
+stripe==2.50.0            # via shuup-stripe
+toml==0.10.1              # via pytest, shuup
+unicodecsv==0.14.1        # via shuup
+unidecode==1.1.1          # via django-filer
+urllib3==1.25.10          # via requests
+webencodings==0.5.1       # via bleach
+xlrd==1.2.0               # via shuup
+zipp==3.1.0               # via importlib-metadata
